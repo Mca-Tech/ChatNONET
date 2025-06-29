@@ -31,7 +31,7 @@ ChatNONET is an **offline AI chatbot app** for Android that runs **local Large L
 ### Clone the Project
 
 ```bash
-git clone https://github.com/yourusername/chatnonet-android.git
+git clone https://github.com/Mca-Tech/ChatNONET.git
 ```
 
 ### Run on Android Studio
