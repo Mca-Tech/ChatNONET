@@ -18,7 +18,7 @@ ChatNONET is an **offline AI chatbot app** for Android that runs **local Large L
 
 | Chat Interface | Model Selection |
 |----------------|-----------------|
-| ![](screenshots/chat.png) | ![](screenshots/model_select.png) |
+| ![](screenshots/Screenshot_20250629_150920) | ![](screenshots/Screenshot_20250629_150941) |
 
 ## Getting Started
 
