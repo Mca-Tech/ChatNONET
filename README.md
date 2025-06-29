@@ -1,4 +1,4 @@
-# ChatNONET Android App
+# ChatNONET (Offline/local AI Assistant) for Android
 
 ChatNONET is an **offline AI chatbot app** for Android that runs **local Large Language Models (LLMs)** using the quantized `GGUF` models from the `ChatNONET` family (135M, 300M, 1B, and 3B sizes). It uses `llama.cpp` in the backend to run the model without needing any internet connection.
 
