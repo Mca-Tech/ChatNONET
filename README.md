@@ -14,11 +14,11 @@ ChatNONET is an **offline AI chatbot app** for Android that runs **local Large L
 
 > 📥 [Download APK](https://example.com/chatnonet.apk)
 
-## Screenshots
+## Screenshots & Realtime Generation (Qualcomm Snapdragon 730G)
 
-| Chat Interface | Model Selection |
-|----------------|-----------------|
-| ![](screenshots/Screenshot_20250629_150920) | ![](screenshots/Screenshot_20250629_150941) |
+| Chat Interface | Model Selection | Generation | 
+|----------------|-----------------|-----------------|
+| ![](screenshots/Screenshot_20250629_150920.png) | ![](screenshots/Screenshot_20250629_150941.png) | ![](screenshots/realtime_generation.gif)
 
 ## Getting Started
 
