@@ -1,0 +1,40 @@
+[versions]
+agp = "8.8.1"
+githubJavaLibkiwix = "3.0.0"
+githubJavaLibkiwixVersion = "2.1.0"
+javaLibkiwix = "2.2.0"
+javaLibkiwixVersion = "2.2.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kiwixLibAndroid = "3.3.0"
+libkiwix = "2.2.4"
+libzimAndroid = "3.3.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+onnxruntimeAndroid = "1.16.1"
+playServicesAdsApi = "24.4.0"
+
+[libraries]
+java-libkiwix = { module = "org.kiwix:java-libkiwix", version.ref = "javaLibkiwix" }
+java-libkiwix-v210 = { module = "com.github.kiwix:java-libkiwix", version.ref = "githubJavaLibkiwixVersion" }
+java-libkiwix-v300 = { module = "com.github.kiwix:java-libkiwix", version.ref = "githubJavaLibkiwix" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kiwix-java-libkiwix = { module = "com.github.kiwix:java-libkiwix", version.ref = "javaLibkiwixVersion" }
+kiwix-lib-android = { module = "org.kiwix:kiwix-lib-android", version.ref = "kiwixLibAndroid" }
+libkiwix = { module = "org.kiwix:libkiwix", version.ref = "libkiwix" }
+libzim-android = { module = "org.openzim:libzim-android", version.ref = "libzimAndroid" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+onnxruntime-android = { module = "com.microsoft.onnxruntime:onnxruntime-android", version.ref = "onnxruntimeAndroid" }
+play-services-ads-api = { group = "com.google.android.gms", name = "play-services-ads-api", version.ref = "playServicesAdsApi" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

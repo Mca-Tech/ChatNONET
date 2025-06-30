@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    >
+
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/copy_image"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@id/textChatDisplayBackgroundId"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="1dp"
+            app:srcCompat="@drawable/copy_alt"
+            android:layout_toEndOf="@+id/speak_image" />
+
+
+        <ImageView
+            android:id="@+id/speak_image"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@id/textChatDisplayBackgroundId"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/volume"
+            android:layout_marginBottom="1dp"/>
+
+        <ImageView
+            android:id="@+id/sourcesButton"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@id/textChatDisplayBackgroundId"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="1dp"
+            app:srcCompat="@drawable/search"
+            android:layout_toEndOf="@+id/copy_image" />
+
+        <RelativeLayout
+            android:id="@+id/textChatDisplayBackgroundId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:id="@+id/textViewMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It is a powerful paradox. You would think that success would build confidence, but for many, each new achievement just raises the stakes and increases the fear of being 'found out' It's a reminder that our internal perception of ourselves is often much more powerful, and sometimes more critical, than the external reality that everyone else sees."
+                android:textColor="#CCCCDCFF"
+                android:textSize="16sp"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

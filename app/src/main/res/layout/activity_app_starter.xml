@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatnonet_main_background"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Logo with Shadow -->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:contentDescription="App Logo"
+            android:elevation="8dp"
+            app:srcCompat="@drawable/chatnonet_icon" />
+
+        <!-- App Name with Styled Text -->
+        <TextView
+            android:id="@+id/chatNonetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView4"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="ChatNONET4"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+        <!-- Subtitle with Smooth Animation -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chatNonetName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:padding="8dp"
+            android:text="Offline AI chatbot, advanced version of ChatNONET3."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:alpha="0.8" />
+
+        <!-- Features Section -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:padding="10dp"
+            android:text="Features"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:shadowColor="#80000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:padding="10dp"
+            android:text="Multiple AI models tailored to your device.\nSmarter, faster, and fully private.\nOptimized for smartphones, PCs, and local devices."
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:lineSpacingExtra="6dp" />
+
+        <!-- Enhanced Button -->
+        <ImageView
+            android:id="@+id/startButton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="Start Button"
+            app:srcCompat="@drawable/chatnonet_start_button"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/startButton"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/mcatech" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="6dp"
+            android:padding="10dp"
+            android:text="McaTech"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="6dp"
+            android:padding="10dp"
+            android:text="McaTech"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</ScrollView>

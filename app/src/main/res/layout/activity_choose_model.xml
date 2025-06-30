@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fillViewport="true"
+    android:background="@drawable/chatnonet_main_background"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/headerTopOptions"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/chatnonet_header_design">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/mcatech"/>
+
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/chatnonet_x_button" />
+            <TextView
+                android:id="@+id/nonetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/backButton"
+                android:layout_centerVertical="true"
+                android:text="Choose Model"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="20dp"
+                />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerTopOptions"
+            android:layout_marginTop="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerTopOptions"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/headerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose a model or brain that match your device performance. The more parameters it has, the smarter it becomes, but it will also be heavier, larger in size, and slow response."
+                    android:textSize="18sp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="30dp"
+                    android:textColor="#FFFFFF" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/chatnonet_footer_design">
+
+                    <RadioButton
+                        android:id="@+id/nonet1BQ8Model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Nonet-1B-Q8 Model"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nonet1BQ8Info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nonet1BQ8Model"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Size: 1.2gb\nParameters: 1 Billion\n\nRecommended for complex task, but slow response."
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/nonet1BQ8DownloadState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/nonet1BQ8Info"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Select to Begin"
+                        android:textColor="#30FF00"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headerText"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/chatnonet_footer_design">
+
+                    <RadioButton
+                        android:id="@+id/nonet135mQ8Model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Nonet-135m-Q8 Model"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/nonet135mQ8Info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nonet135mQ8Model"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Size: 105mb only\nParameters: 135 Million\n\nNot so smart, but it is the fastest response!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/nonet135mQ8DownloadState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/nonet135mQ8Info"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Select to Begin"
+                        android:textColor="#30FF00"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout5"
+                    android:layout_marginTop="0dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/chatnonet_footer_design">
+
+                    <RadioButton
+                        android:id="@+id/nonet300mQ8Model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Nonet-300m-Q8 Model"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nonet300mQ8Info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nonet300mQ8Model"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Size: 300mb only\nParameters: 300 Million\n\nGood for simple task, less faster!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/nonet300mQ8DownloadState"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/nonet300mQ8Info"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Select to Begin"
+                        android:textColor="#30FF00"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/chatnonet_footer_design">
+
+                    <RadioButton
+                        android:id="@+id/nonet3bQ8Model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Nonet-3b-Q8 Model"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nonet3bQ8Info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nonet3bQ8Model"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Size: 3.18gb\nParameters: 3 Billion\n\nThe smartest, but very slow. It needs powerful device!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/nonet3bQ8DownloadState"
+                        android:layout_width="175dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/nonet3bQ8Info"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Select to Begin"
+                        android:textColor="#30FF00"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
