@@ -12,7 +12,7 @@ ChatNONET is an **offline AI chatbot app** for Android that runs **local Large L
 
 ## App Demo
 
-> 📥 [Download APK](https://huggingface.co/McaTech/Nonet/resolve/main/ChatNONET4.apk)
+> 📥 [Download APK](https://github.com/Mca-Tech/ChatNONET/releases/download/v1.0.0/ChatNONET4.apk)
 
 ## Screenshots & Realtime Generation (Qualcomm Snapdragon 730G)
 
