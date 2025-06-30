@@ -39,7 +39,7 @@ git clone https://github.com/Mca-Tech/ChatNONET.git
 - Open the project in Android Studio.
 - Sync Gradle.
 - Connect your Android device or use an emulator.
-- Download all the [Precompiled Binaries for Android](https://example.com/chatnonet.apk).
+- Download all the [Precompiled Binaries for Android](https://huggingface.co/McaTech/Nonet/tree/main/Precompiled_Binaries_Android/jniLibs).
 - Copy all the binaries like this:
     ```
     ChatNONET4/
